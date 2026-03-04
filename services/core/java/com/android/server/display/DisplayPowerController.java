@@ -2114,6 +2114,30 @@ final class DisplayPowerController implements AutomaticBrightnessController.Call
             long delay = SystemClock.elapsedRealtime() - mScreenOnBlockStartRealTime;
             Slog.i(mTag, "Unblocked screen on after " + delay + " ms");
             Trace.asyncTraceEnd(Trace.TRACE_TAG_POWER, SCREEN_ON_BLOCKED_TRACE_NAME, 0);
+
+            mHandler.postDelayed(() -> {
+                int currentMode = Settings.System.getIntForUser(
+                        mContext.getContentResolver(),
+                        Settings.System.SCREEN_BRIGHTNESS_MODE,
+                        Settings.System.SCREEN_BRIGHTNESS_MODE_MANUAL,
+                        UserHandle.USER_CURRENT);
+
+                if (currentMode == Settings.System.SCREEN_BRIGHTNESS_MODE_AUTOMATIC) {
+                    Settings.System.putIntForUser(
+                            mContext.getContentResolver(),
+                            Settings.System.SCREEN_BRIGHTNESS_MODE,
+                            Settings.System.SCREEN_BRIGHTNESS_MODE_MANUAL,
+                            UserHandle.USER_CURRENT);
+
+                    mHandler.postDelayed(() -> {
+                        Settings.System.putIntForUser(
+                                mContext.getContentResolver(),
+                                Settings.System.SCREEN_BRIGHTNESS_MODE,
+                                Settings.System.SCREEN_BRIGHTNESS_MODE_AUTOMATIC,
+                                UserHandle.USER_CURRENT);
+                    }, 400);
+                }
+            }, 2000);
         }
     }
 
