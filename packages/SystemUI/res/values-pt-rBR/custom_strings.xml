@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * Copyright (c) 2015, The CyanogenMod Project
+ * Copyright (c) 2017-2021 The LineageOS Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Status bar - icons -->
+    <string name="status_bar_icons_title">Ícones da barra de status</string>
+
+    <!-- Custom QS tiles -->
+    <!-- Ambient display QS tile -->
+    <string name="quick_settings_ambient_display_label">Tela ambiente</string>
+    <string name="accessibility_quick_settings_ambient_display_off">Tela ambiente desligada.</string>
+    <string name="accessibility_quick_settings_ambient_display_on">Tela ambiente ligada.</string>
+
+    <!-- AOD QS tile -->
+    <string name="quick_settings_aod_label">AOD</string>
+    <string name="quick_settings_aod_off_powersave_label">AOD desligado\nEconomia de bateria</string>
+
+    <!-- Autobrightness tile -->
+    <string name="quick_settings_autobrightness_label">Brilho automático</string>
+
+    <!-- Caffeine QS tile -->
+    <string name="quick_settings_caffeine_label">Cafeina</string>
+    <string name="accessibility_quick_settings_caffeine_off">Cafeina desligado.</string>
+    <string name="accessibility_quick_settings_caffeine_on">Cafeina ligado.</string>
+
+    <!-- Heads up QS tile -->
+    <string name="quick_settings_heads_up_label">Notificações flutuante</string>
+    <string name="accessibility_quick_settings_heads_up_off">Notificações flutuante desligadas.</string>
+    <string name="accessibility_quick_settings_heads_up_on">Notificações flutuante ligadas.</string>
+
+    <!-- PowerShare QS tile -->
+    <string name="quick_settings_powershare_label">Compartilhamento de energia sem fio</string>
+    <string name="quick_settings_powershare_off_powersave_label">Compartilhamento de energia sem fio desligado\nEconomia de bateria</string>
+    <string name="quick_settings_powershare_off_low_battery_label">Compartilhamento de energia sem fio desligado\nBateria muito baixa</string>
+    <string name="quick_settings_powershare_enabled_label">Compartilhamento de energia sem fio ativado</string>
+
+    <!-- Reader mode QS tile -->
+    <string name="quick_settings_reading_mode">Modo de leitura</string>
+    <string name="accessibility_quick_settings_reading_mode_on">Modo de leitura ativado.</string>
+    <string name="accessibility_quick_settings_reading_mode_off">Modo de leitura desativado.</string>
+
+    <!-- Sync QS tile -->
+    <string name="quick_settings_sync_label">Sincronização</string>
+    <string name="accessibility_quick_settings_sync_off">Sincronização desativada.</string>
+    <string name="accessibility_quick_settings_sync_on">Sincronização ativada.</string>
+
+    <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">Roteamento USB</string>
+
+    <!-- VPN QS tile -->
+    <string name="quick_settings_vpn_label">VPN</string>
+    <string name="quick_settings_vpn_connect_dialog_title">Conectar a\u2026</string>
+    <string name="vpn_credentials_hint">Insira suas credenciais para conectar a <xliff:g id="name">%s</xliff:g></string>
+    <string name="vpn_credentials_username">Usuário</string>
+    <string name="vpn_credentials_password">Senha</string>
+    <string name="vpn_credentials_dialog_connect">Conectar</string>
+
+    <!-- Screen record -->
+    <string name="screenrecord_lowquality_label">Qualidade mais baixa</string>
+    <string name="screenrecord_lowquality_summary">Para um tamanho de arquivo menor</string>
+    <string name="screenrecord_longer_timeout_switch_label">Limite de tamanho maior</string>
+    <string name="screenrecord_longer_timeout_switch_summary">Limitar gravação a 15 GB</string>
+    <string name="screenrecord_skip_time_label">Pular contagem regressiva</string>
+    <string name="screenrecord_skip_time_summary">Remover a espera de 3 segundos</string>
+    <string name="screenrecord_hevc_switch_label">Codificação HEVC</string>
+    <string name="screenrecord_hevc_switch_summary">Usar o codificador HEVC mais eficiente</string>
+
+    <!-- Label for UI element which allows deleting the screenshot [CHAR LIMIT=30] -->
+    <string name="screenshot_delete_label">Excluir</string>
+    <!-- Content description indicating that tapping the element will allow deleting the screenshot [CHAR LIMIT=NONE] -->
+    <string name="screenshot_delete_description">Excluir captura de tela</string>
+
+    <!-- DataSwitch Tile -->
+    <string name="qs_data_switch_label">Alternar chip de dados</string>
+    <string name="qs_data_switch_sim_label">SIM %d</string>
+    <string name="qs_data_switch_sim_desc">SIM %d é o chip preferencial para dados móveis</string>
+    <string name="qs_data_switch_sim_transient">Alternando\u2026</string>
+
+    <!-- Face unlock -->
+    <string name="face_unlock_recognizing">Reconhecendo rosto...</string>
+
+    <!-- Advanced restart menu -->
+    <!-- Button to indicate more options -->
+    <string name="global_action_restart_more">Mais</string>
+    <!-- Button to restart the device, within the Restart Options dialog -->
+    <string name="global_action_restart_system">Sistema</string>
+    <!-- Button to restart the device into recovery mode, within the Restart Options dialog -->
+    <string name="global_action_restart_recovery">Recuperação</string>
+    <!-- Button to restart the device into bootloader mode, within the Restart Options dialog -->
+    <string name="global_action_restart_bootloader">Bootloader</string>
+    <!-- Button to restart the device into download mode, within the Restart Options dialog -->
+    <string name="global_action_restart_download">Download</string>
+    <!-- Restart progress dialog. This is shown if the user chooses to restart the device. -->
+    <string name="global_action_restart_progress">Reiniciando\u2026</string>
+    <!-- Restart to recovery mode progress dialog. This is shown if the user chooses to restart the device. -->
+    <string name="global_action_restart_recovery_progress">Reiniciando no modo de recuperação\u2026</string>
+    <!-- Restart to bootloader mode progress dialog. This is shown if the user chooses to restart the device. -->
+    <string name="global_action_restart_bootloader_progress">Reiniciando no modo bootloader\u2026</string>
+    <!-- Restart to download mode progress dialog. This is shown if the user chooses to restart the device. -->
+    <string name="global_action_restart_download_progress">Reiniciando no modo download\u2026</string>
+    <!-- Button to restart SystemUI, within the Restart Options dialog -->
+    <string name="global_action_restart_systemui">SystemUI</string>
+
+    <!-- Flashlight Strength -->
+    <string name="flashlight_strength_title">Intensidade da lanterna</string>
+    <string name="flashlight_strength_turn_off">Desligar</string>
+    <string name="flashlight_strength_turn_on">Ligar</string>
+</resources>
